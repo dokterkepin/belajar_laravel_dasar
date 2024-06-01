@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get("/vin", function(){
+    return "Halo Kevin";
+});
+
+Route::redirect("/tech", "/vin");
